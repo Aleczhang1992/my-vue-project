@@ -1,7 +1,11 @@
 # my-vue-project
 
-> A Vue.js project 
 
+A Vue.js project 
+
+##说明：
+
+通过官方vue-cli脚手架创建，使用webpack打包管理工具，集成mint-ui,vue-router,vuex
 ## Build Setup
 
 ``` bash
@@ -13,12 +17,6 @@ npm run dev
 
 # build for production with minification
 npm run build
-
-# run unit tests
-npm run unit
-
-# run e2e tests
-npm run e2e
 
 # run all tests
 npm test

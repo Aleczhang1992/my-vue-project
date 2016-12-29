@@ -1,16 +1,27 @@
 <template>
   <div id="app">
-    <hello></hello>
+  	<mt-header title="导航">
+	  <mt-button icon="more" slot="right"></mt-button>
+	</mt-header>
+	<router-view></router-view>
   </div>
 </template>
 
 <script>
-import Hello from './components/Hello'
+import Vue from 'vue'
+
+
+import { Header,Button} from 'mint-ui';
+
+Vue.component(Header.name, Header);
+Vue.component(Button.name, Button);
+
 
 export default {
   name: 'app',
   components: {
-    Hello
+    'mt-header':Header,
+    'mt-button':Button
   }
 }
 </script>

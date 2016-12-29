@@ -15,7 +15,7 @@
     <mt-cell v-for="n in 4" :title="'测试 ' + n" />
   </mt-tab-container-item>
   <mt-tab-container-item id="3">
-    <mt-cell v-for="n in 6" :title="'选项 ' + n" />
+    <router-link :to="{ name: 'testPage', params: { userId: 123 }}">测试页面</router-link>
   </mt-tab-container-item>
 </mt-tab-container>
 
